@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Daniel">
+    <meta name="description" content="Aula de PWEB na fatec">
+    <meta name="keywords" content="sites,web,tags,html,fatec,aula,ensino,Daniel Bispo">
+    <title>PWEB</title>
+    <style>
+        body{
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+        }
+        #conteudo{
+            background: linear-gradient(45deg,  rgba(0, 60, 95, 0.7),  rgba(50, 0, 63, 0.7),  rgba(136, 0, 0, 0.7));
+            border-radius: 15px;
+            margin: auto;
+            width: 90vw;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body background="imagem1.jpg" text="chocolate" link="#00FF00" vlink="#8A2BE2" alink="DC153c">
+    <!--HTML SEMANTICO-->
+    <main id="conteudo">
+        <header>
+            <h1 id="titulo1">Este é o primeiro título</h1>
+            
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <section>
+                <h2>Este é um titulo secundario</h2>
+                <p>Este é um parágrafo normal com <strong>testo em negrito, 
+                    pode ser usada a tag b também </strong>
+                    <i>itálico</i>,
+                    <del>excluído</del>, <small>pequeno</small>
+                    <q>aspas ou citação</q>,
+                    <mark>marcação</mark>,
+                    <sub>subscrito</sub>,
+                    <sup>superescrito</sup>
+                    <abbr title="Hypertext markup language">HTML</abbr>
+                    <u>sublinhado</u>
+                </p>
+                <br>
+                <p>
+                    este é outro parágrafo, com uma lista ordenada
+                </p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                <dl>
+                    <dt>Banco de dados relacionais</dt>
+                    <dd>Oracle</dd>
+                    <dd>SQL Server</dd>
+                    <dt>Banco de dados não relacionais</dt>
+                    <dd>MongoDB</dd>
+                    <dd>Cassandra</dd>
+                </dl>
+            
+            <table border="1">
+                <p>Esta é uma tabela</p>
+                <thead>
+                    <tr>
+                        <th>Nome Pessoa</th>
+                        <th>E-mail</th>
+
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Daniel</td>
+                            <td>daniel@gmail.com</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Daniel</td>
+                            <td>daniel@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                Total de pessoas: 2
+                            </td>
+                        </tr>
+                    </tfoot>
+                </thead>
+            </table>
+        </section>
+        <section>
+            <h3>Titulo 3</h3>
+            <p>Este é um bloco de texto sem o pre</p>
+            <pre>Este é um bloco de texto pré-formatados</pre>
+            <p>Este é um bloco de texto sem tag pre</p>
+        </section>
+        <section>
+            <h4>Titulo 4</h4>
+            <p>Using a tabulation character</p>
+            <p>&nbsp; *using a tabulation character</p>
+            <p>&ensp; *using two tabulation characteres</p>
+            <p>&emsp; *using three tabulation characteres</p>
+        </section>
+        <section>
+            <h5>Titulo 5</h5>
+            <p>Exemplos de links</p>
+            <a href="https//www.fatecsorocaba.edu.br">Site da fatec</a>
+            <br>
+            <a href="mailto:danielbispo3015@hotmail.com">Envie um email</a>
+            <br>
+            <p>Links Plus
+                as cores no link podem ser mudadas com os comandos links
+                (CordonsLinks),
+                alink (cor do link que foi pressionado),
+                vlink (cor de um link que já foi visitado),
+                podem ser colocados no BODY
+            </p>
+        </section>
+        <section>
+            <h6>Titulo 6</h6>
+            <p>Exemplos de imagens</p>
+            <figure>
+                <img src="https://media.istockphoto.com/id/1088763852/pt/foto/corpulent-man-buttoning-up-tight-shirt-oversize-clothing-problem-appearance.jpg?s=612x612&w=is&k=20&c=XORX-NVrGptToFGXDWPhPOWgxvNr1AgENC1EOCHXvoY=" alt="" height="150" width="150">
+                
+            </figure>
+            <figcaption>Legenda</figcaption>
+            <figure>
+                <img src="https://images.pexels.com/photos/1697100/pexels-photo-1697100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="150" height="150">
+                    
+            </figure>
+            <figcaption>Legenda</figcaption>
+        </section>
+    </main>
+        <!--
+            <nav></nav>
+            <main> </main>
+            <header><h2></h2></header>
+            <section></section>
+            <aside></aside>
+            <article></article>
+        -->
+    </body>
+    </html>
