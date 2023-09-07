@@ -1,0 +1,58 @@
+body{
+    background-size: cover;
+    color: white;
+
+}
+
+.cabecalho{
+    text-align: center;
+}
+
+.conteudo{
+    width: 80vw;
+    margin: auto;    
+    border-radius: 10px;
+    display: flex;
+}
+
+.conteudo img{
+    margin-right: 10px;
+    height: 100px;
+    float: left;
+    border-radius: 10px;
+}
+
+.todasNoticias{
+    flex: 3;
+}
+
+.noticia{
+    border-radius: 10px;
+    min-height: 160px;
+    background: rgba(0, 0, 0, 0.699);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.descricao{
+    text-align: justify;
+}
+
+.listaDeAssuntos{
+    flex: 1;
+    float: right;
+    background: rgba(255, 255, 255, 0.678);
+    color: #000;
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.listaDeAssuntos ul{
+    padding: 5px;
+}
+
+.tituloSecao{
+    margin: 10px 0px;
+}
