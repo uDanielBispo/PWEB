@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.headerSite{
+    margin-bottom: 50px;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
+    color: white;
+}
+
+.headerLinks a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.headerLinks a:hover{
+    text-decoration: underline;
+}
+
+.principaisNoticias{
+    margin: auto;
+    width: 80vw;
+}
+
+.destaques{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    height: 60vh;
+    margin-bottom: 60px;
+}
+
+.destaque{
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.destaque:hover{
+    transform: translateY(5px);
+}
+
+.destaque1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(./images/img4.jpg);
+}
+
+.destaque2{
+    background-image: url(./images/img5.jfif);
+}
+
+.destaque3{
+    background-image: url(./images/img2.webp);
+}
+
+.textos{
+    background-color: #0000007f;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.textos, .textos a{
+    color: #fff;
+
+}
+
+.tituloNoticia{
+    margin: 0;
+    font-size: 20px;
+}
+
+.descricaoDestaque{
+    margin: 5px 0;
+}
+
+.grupoPassado{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 70vw;
+    margin: 50px auto;
+    grid-gap: 10px;
+}
+
+.noticiasPassadas, .infosGerais{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.noticiasPassadas{
+    color: brown;
+}
+
+.noticiaPassada{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tituloNoticiasPassadas{
+    font-weight: bold;
+}
+
+.imagemNoticiaPassada{
+    width: 150px;
+    /* float: left; */
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.previsaoTempo{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.tituloAside{
+    text-align: center;
+    margin: 20px 0 10px 0px;
+}
+
+.previsaoTempo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previsaoTempo img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    
+}
+
+.conteudoViuIsso{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.viuIsso{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.viuIsso img{
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.descricao{
+    text-align: justify;
+    width: 70%;
+}
+
+.rodape{
+    background-color: brown;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
