@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Atividade 8 Daniel Bispo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <style>
+     body {
+            font-family: sans-serif;
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+        }
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        select {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .jogar {
+            width: 100px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .resultado {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra, Papel ou Tesoura</h1>
+        <div class="opcoes">
+            <select name="opcao">
+                <option value="pedra">Pedra</option>
+                <option value="papel">Papel</option>
+                <option value="tesoura">Tesoura</option>
+            </select>
+        </div>
+
+        <button class="jogar" type="button" onclick="jogo()">Jogar</button>
+        <div class="resultado"></div>
+    </div>
+</body>
+</html>
