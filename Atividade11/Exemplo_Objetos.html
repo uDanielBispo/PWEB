@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo_Objeto</title>
+</head>
+
+<body>
+    <script>
+        // USANDO OBJECT
+        var aluno1 = new Object();
+
+        aluno1.ra = "00001234";
+        aluno1.nome = "Kevin";
+        alert(" ra = " + aluno1.ra + " nome = " + aluno1.nome);
+
+        //USANDO {}
+        var aluno2 = {};
+        aluno2.ra = "1234";
+        aluno2["nome"] = " Mayara ";
+
+        //aluno.nome="Mayara" <- Outra maneira de fazer
+
+        alert(" ra = " + aluno2.ra + " nome = " + aluno2.nome);
+        //LITERAL
+        var aluno3 = {
+            ra: "1234567",
+            nome: "Gabriel"
+        };
+        alert("ra = " + aluno3.ra + "nome" + aluno3.nome)
+
+        //USANDO FUNÇÃO CONSTRUTORA
+        function Aluno(ra, nome) {
+            this.ra = ra;
+            this.nome = nome;
+
+            this.MostrarDados = function () {
+                return "ra = " + this.ra + "nome = " + this.nome;
+
+            }
+
+        }
+
+        var aluno4 = new Aluno("123", "Daniel");
+
+        alert(aluno4.MostrarDados());
+
+        var aluno5 = {};
+        var nome_propriedade = "ra";
+        aluno5[nome_propriedade] = "123";
+        aluno5['nome'] = "Vitor";
+        alert(aluno5.ra + " " + aluno5.nomr);
+
+        function Aluno2() {
+            var ra;
+            var nome;
+
+            this.setRa = function (value) {
+                return this.ra;
+            }
+
+            this.getRa = function () {
+                return this.Ra;
+            }
+
+            this.setNome = function (value) {
+                this.nome = value;
+            }
+
+        }
+        var aluno6 = new Aluno2();
+        aluno6.setNome("Igor");
+        aluno6.setRa("234");
+
+        alert("ra=" + aluno6.getRa() + "nome=" + aluno6.getNome());
+    </script>
+</body>
+
+</html>
