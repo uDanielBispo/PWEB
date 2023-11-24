@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio2</title>
+</head>
+<body>
+    <script>
+        function conta(nomeCorrentista, banco, nConta, saldo){
+            this.nomeCorrentista = nomeCorrentista;
+            this.banco = banco;
+            this.nConta = nConta;
+            this.saldo = saldo;
+        }
+
+        function corrente(saldoEsp){
+            this.saldoEsp = saldoEsp;
+
+            //getters
+            this.getNomeCorrentista = function (){
+                return this.nomeCorrentista;
+            }
+            this.getBanco = function (){
+                return this.banco;
+            }
+            this.getNConta = function (){
+                return this.nConta;
+            }
+            this.getSaldo = function (){
+                return this.saldo;
+            }
+            //setters
+            this.setNomeCorrentista = function (v){
+                this.nomeCorrentista = v;
+            }
+            this.setBanco = function (v){
+                this.banco = v;
+            }
+            this.setNConta= function (v){
+                this.nConta= v;
+            }
+            this.setSaldo = function (v){
+                this.saldo = v;
+            }
+        }
+        function poupanca(juros, dataVenc){
+            this.juros = juros;
+            this.dataVenc = dataVenc;
+            //getters
+            this.getNomeCorrentista = function (){
+                return this.nomeCorrentista;
+            }
+            this.getBanco = function (){
+                return this.banco;
+            }
+            this.getNConta = function (){
+                return this.nConta;
+            }
+            this.getSaldo = function (){
+                return this.saldo;
+            }
+            //setters
+            this.setNomeCorrentista = function (v){
+                this.nomeCorrentista = v;
+            }
+            this.setBanco = function (v){
+                this.banco = v;
+            }
+            this.setNConta= function (v){
+                this.nConta= v;
+            }
+            this.setSaldo = function (v){
+                this.saldo = v;
+            }
+        }
+        corrente.prototype = new conta();
+        poupanca.prototype = new conta();
+
+        var contaCorrente = new corrente(123);
+        contaCorrente.setBanco('Santander');
+        contaCorrente.setSaldo(1234);
+        contaCorrente.setNomeCorrentista('Daniel');
+        contaCorrente.setNConta(1);
+
+        var contaPoupanca = new poupanca(0.2, '19/10/2023');
+        contaPoupanca.setBanco('NuBank');
+        contaPoupanca.setSaldo(4321);
+        contaPoupanca.setNomeCorrentista('Helen Ganzarolo');
+        contaPoupanca.setNConta(2);
+
+        alert(`
+            Banco: ${contaCorrente.getBanco()}
+            Saldo: \n${contaCorrente.getSaldo()}
+            Nome Correntista: \n${contaCorrente.getNomeCorrentista()}
+            Numero da conta: \n${contaCorrente.getNConta()}
+        `);
+
+        alert(`
+            Banco: ${contaPoupanca.getBanco()}
+            Saldo: \n${contaPoupanca.getSaldo()}
+            Nome Correntista: \n${contaPoupanca.getNomeCorrentista()}
+            Numero da conta: \n${contaPoupanca.getNConta()}
+        `);
+    </script>
+</body>
+</html>

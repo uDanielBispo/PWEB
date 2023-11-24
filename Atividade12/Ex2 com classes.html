@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio2 com classes</title>
+</head>
+<body>
+    <script>
+        class Conta{
+            constructor(nomeCorrentista, banco, nConta, saldo){
+                this.nomeCorrentista = nomeCorrentista;
+                this.banco = banco;
+                this.nConta = nConta;
+                this.saldo = saldo;
+            }
+        }
+        class Corrente extends Conta{
+            constructor(saldEsp){
+                this.saldEsp = saldEsp;
+            }
+            //getters
+            get NomeCorrentista(){
+                return this.nomeCorrentista;
+            }
+            get Banco(){
+                return this.banco;
+            }
+            get NConta(){
+                return this.nConta;
+            }
+            get Saldo(){
+                return this.saldo;
+            }
+            //setters
+            set NomeCorrentista(v){
+                this.nomeCorrentista = v;
+            }
+            set Banco(v){
+                this.banco = v;
+            }
+            set NConta(v){
+                this.nConta= v;
+            }
+            set Saldo(v){
+                this.Saldo = v;
+            }
+        }
+
+        class Poupanca extends Conta{
+            constructor(juros, dataVenc){
+                this.juros = juros;
+                this.dataVenc = dataVenc;
+            }
+
+            //getters
+            get NomeCorrentista(){
+                return this.nomeCorrentista;
+            }
+            get Banco(){
+                return this.banco;
+            }
+            get NConta(){
+                return this.nConta;
+            }
+            get Saldo(){
+                return this.saldo;
+            }
+            //setters
+            set NomeCorrentista(v){
+                this.nomeCorrentista = v;
+            }
+            set Banco(v){
+                this.banco = v;
+            }
+            set NConta(v){
+                this.nConta= v;
+            }
+            set Saldo(v){
+                this.Saldo = v;
+            }
+        }
+    </script>
+</body>
+</html>
