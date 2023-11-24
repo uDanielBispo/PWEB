@@ -1,0 +1,101 @@
+/* my configs */
+.w-70{
+    width: 100%;
+}
+.locals-content{
+    width: 100%;
+}
+.locals{
+    width: 100%;
+    margin: 0 auto;
+}
+.local{
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.local-p{
+    flex: 1;
+    background-color: #00000071;
+    color: white;
+    margin: 0;
+    padding: 20px 30px;
+    opacity: 0;
+    transition: 1s;
+}
+.fatec{
+    background-image: url(/Imagens/fatec.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.senai{
+    background-image: url(/Imagens/Senai.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.prysmian{
+    background-image: url(/Imagens/Prysmian.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fatec:hover > .local-p{
+    opacity: 1;
+}
+
+.senai:hover > .local-p{
+    opacity: 1;
+}
+
+.prysmian:hover > .local-p{
+    opacity: 1;
+}
+
+/* accordion settings */
+.accordion-button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* CARD SETTINGS */
+.card-img-top{
+    height: 200px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+/* Locals */
+@media (min-width: 1200px) {
+    /* my configs */
+    .w-70{
+        width: 60%;
+    }
+    .locals-content{
+        width: 70%;
+    }
+    .locals{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 15px;
+        height: 500px;
+    }   
+    .fatec{
+        background-size: cover;
+    }
+    .senai{
+        background-size: cover;
+    }
+    .prysmian{
+        background-size: cover;
+    } 
+}
